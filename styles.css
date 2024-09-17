@@ -106,6 +106,10 @@ nav ul li a {
     background-color: unset;
 }
 
+nav ul li:active {
+    background-color: unset;
+}
+
 #close {
     color: #fff;
     font-size: 20px;
@@ -529,7 +533,7 @@ section {
     max-width: 300px; /* Optional: Set a max width to limit item size */
     text-align: center;
     padding: 20px;
-    background-color: var(--surface);
+    background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -860,7 +864,7 @@ button[type="submit"]:hover {
         text-align: left;
         gap: 5em;
     }
-
+    
     /*
     .footer-about,
     .footer-links,
