@@ -418,7 +418,7 @@ section {
         justify-content: center;
         align-items: center;
         height: 200px;
-        width: 100%;
+        width: 500px;
     }
 
     .hero-right > img {
@@ -861,6 +861,19 @@ button[type="submit"]:hover {
     .footer-newsletter button {
         align-self: self-start;
     }
+
+    header {
+        height: 70px;
+    }
+    main {
+        margin-top: 70px;
+    }
+
+    #logo-container > img {
+        width: 30px;
+        height: 30px;
+    }
+    
 }
 
 @media (max-width: 780px) {
