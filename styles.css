@@ -99,7 +99,6 @@ nav ul li a {
     flex-direction: column;
     gap: 20px;
     background-color: #333;
-    width: 100%;
 }
 
 #mobile-nav ul li:first-child:hover {
@@ -853,6 +852,14 @@ button[type="submit"]:hover {
         justify-content: flex-start;
         align-items: center;
         gap: 2em;
+    }
+
+    .footer-newsletter form {
+        flex-direction: column;
+    }
+
+    .footer-newsletter button {
+        align-self: self-start;
     }
 }
 
