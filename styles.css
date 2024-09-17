@@ -147,7 +147,7 @@ nav ul li:active {
     margin-left: 3em;
     display: flex;
     gap: 10px;
-    align-items: center;
+    align-items: center; 
     cursor: pointer;
 }
 
@@ -532,10 +532,18 @@ section {
     max-width: 300px; /* Optional: Set a max width to limit item size */
     text-align: center;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: var(--surface);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member h3 {
+    color: #fff;
+}
+
+.team-member p {
+    color: #777;
 }
 
 .team-member:hover {
