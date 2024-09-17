@@ -6,34 +6,39 @@
     <title>Qwiks</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <header>
         <div id="logo-container">
             <!--<h1 id="logo">Q</h1>-->
-            <img src="assets/qwiks.png" />
+            <img src="assets/qwiks-white.png" />
         </div>
         <nav id="webnav">
             <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#product">Product</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#team">Our Team</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#">Home</a></li>
+                <!--<li><a href="#product">Product</a></li>-->
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
         </nav>
         <div onclick="toggleMenu('show')" id="menu">
-            <i class="fa-sharp fa-solid fa-bars"></i>
+            <ion-icon name="menu-outline"></ion-icon>
         </div>
         <nav id="mobile-nav">
-            <i onclick="toggleMenu('hide')" id="close" class="fa-solid fa-xmark"></i>
+            
             <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#product">Product</a></li>
+                <li><a href="#"><i onclick="toggleMenu('hide')" id="close" class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="#">Home</a></li>
+                <!--<li><a href="#product">Product</a></li>-->
                 <li><a href="#features">Features</a></li>
+                <li><a href="#features">Pricing</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#team">Our Team</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
@@ -41,16 +46,49 @@
     <main>
         <section id="hero">
             <div class="hero-left">
-                <h1>Bringing Security To A whole New Level</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ut incidunt? Cum, ad minima possimus ipsam a omnis consequatur fugiat doloribus nesciunt ab error iure numquam nobis perferendis qui vel!</p>
-                <button>Learn More</button>
+                <h1 id="typewriter"></h1>
+                <p>We provide top-tier mobile application security solutions, setting a global standard for safeguarding digital experiences.</p>
+                <div class="cta">
+                    <img src="assets/app-store-google.png.webp" />
+                    <img src="assets/app-store-apple.png.webp" />
+                </div>
             </div>
             <div class="hero-right">
-                <img src="assets/mobilesecurity.webp"/>
+                <img src="assets/1725864732912.png"/>
             </div>
         </section>
+        <section id="features">
+            <p class="description">Our app is your global safety net, providing real-time protection and peace of mind wherever your adventures take you.</p>
+            <h2 class="heading">Key Features</h2>
+            <div class="features-container">
+                <div class="feature-item">
+                    <ion-icon name="radio-sharp" class="feature-icon"></ion-icon>
+                    <!--<img src="assets/emergency-button.png" class="feature-icon">-->
+                    <h3>Emergency SOS</h3>
+                    <p>With a single tap, instantly send a distress signal to pre-selected emergency contacts, including your location and a brief message.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-location-dot feature-icon"></i>
+                    <h3>Location Sharing</h3>
+                    <p>Share your location with trusted contacts in real-time, allowing them to track your whereabouts and provide assistance if needed.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-bell feature-icon"></i>
+                    <h3>Panic Alarm</h3>
+                    <p>Activate a loud, piercing alarm to deter potential threats and attract attention in emergency situations.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-lock feature-icon"></i>
+                    <h3>Safe Zone Monitoring</h3>
+                    <p>Set up virtual "safe zones" to receive alerts if you enter or exit pre-determined areas, such as your home or workplace.</p>
+                </div>
+            </div>
+        </section>
+        <section class="pricing">
+
+        </section>
+        <!--
         <section id="product">
-            <img class="link-icon" src="assets/link.png" />
             <h2 class="heading">Our Products</h2>
             <div class="product-container">
                 <div class="product-image">
@@ -80,54 +118,62 @@
                 </div>
             </div>
         </section>
-        <section id="features">
-            <img class="link-icon" src="assets/link.png" />
-            <h2 class="heading">Features</h2>
-            <div class="features-container">
-                <div class="feature-item">
-                    <i class="feature-icon">🔥</i>
-                    <h3>Feature One</h3>
-                    <p>Brief description of Feature One.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="feature-icon">⚡</i>
-                    <h3>Feature Two</h3>
-                    <p>Brief description of Feature Two.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="feature-icon">🌐</i>
-                    <h3>Feature Three</h3>
-                    <p>Brief description of Feature Three.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="feature-icon">🔒</i>
-                    <h3>Feature Four</h3>
-                    <p>Brief description of Feature Four.</p>
-                </div>
-            </div>
-        </section>
+        -->  
         <section id="about" class="about">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Our Mission</h2>
+                    <h2>About Us</h2>
                     <p>
-                        Our mission is to provide innovative solutions that empower businesses to achieve their full potential.
-                        We believe in the power of technology to transform industries and improve lives. Through our dedication
-                        to excellence and commitment to our customers, we strive to create a better future for all.
+                        QwiksWorld, your trusted partner in mobile application security solutions. As a global security organization, we are committed to safeguarding your digital assets and ensuring a secure environment for your, businesses, and individuals' safety and use secure,
+                        reliable, and trustworthy mobile apps. 
                     </p>
-                </div>
-                <div class="about-image">
-                    <img src="mission.jpg" alt="Our Mission">
+                    <div class="about-section">
+                        <h3>Mission</h3>
+                        <p>
+                            Our mission is to offer a global security service that empowers individuals to take control of their safety 
+                            through personalized security access, irrespective of their socio-economic status.
+                        </p>
+                    </div>
+            
+                    <div class="about-section">
+                        <h3>Objective</h3>
+                        <p>
+                            The objective of this application is to develop a unified security platform that assesses and consolidates 
+                            existing security agencies within a single application. QwiksWorld aspires to foster collaboration and 
+                            interconnectivity among these existing security networks rather than competing with them.
+                        </p>
+                    </div>
+            
+                    <div class="about-section">
+                        <h3>Vision</h3>
+                        <p>
+                            Our vision is to create a universally adaptable solution, accessible across any global system or country. 
+                            This will be achieved through seamless integration of API systems and end-to-end encryption benefiting 
+                            both subscribers and local security agencies.
+                        </p>
+                    </div>
+            
+                    <div class="about-section">
+                        <h3>Value Proposition</h3>
+                        <p>
+                            We provide top-tier mobile application security solutions, setting a global standard for safeguarding 
+                            digital experiences. With cutting-edge technology and unwavering commitment, we ensure the utmost 
+                            protection for apps, data, and user privacy, earning the trust of businesses and individuals worldwide.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         
         <section id="team">
-            <h2 class="heading">Our Team</h2>
+            <h2 class="heading">Our Expertise</h2>
+            <p class="description">With a team of seasoned security experts and innovative technologists, we bring a wealth of experience in developing comprehensive security frameworks. Our solutions encompass advanced threat detection, real-time monitoring, and proactive defence mechanisms,
+            ensuring your applications remain secure at all times.
+            </p>
             <div class="team">
                 <div class="team-member">
-                    <img src="assets/teams/person-1.jpg" alt="Member 1">
-                    <h3>John Doe</h3>
+                    <img src="assets/teams/aaron-crop.png" alt="Member 1">
+                    <h3>Aaron Ayoku</h3>
                     <p>CEO</p>
                 </div>
                 <div class="team-member">
@@ -141,7 +187,7 @@
                     <p>Lead Designer</p>
                 </div>
                 <div class="team-member">
-                    <img src="assets/teams/person-3.jpg" alt="Member 4">
+                    <img src="assets/teams/taiwo-kazeem-crop.png" alt="Member 4">
                     <h3>Michael Brown</h3>
                     <p>Lead Developer</p>
                 </div>
@@ -152,13 +198,15 @@
                 </div>
                 <div class="team-member">
                     <img src="assets/teams/person-5.jpg" alt="Member 6">
-                    <h3>David Lee</h3>
-                    <p>Marketing Head</p>
+                    <h3>Isaac Rufus</h3>
+                    <p>App Developer</p>
+                    <p>Nigerian Base Station Director</p>
                 </div>
                 <div class="team-member">
                     <img src="assets/teams/person-6.jpg" alt="Member 6">
-                    <h3>David Lee</h3>
-                    <p>Marketing Head</p>
+                    <h3>Isaac Rufus</h3>
+                    <p>App Developer</p>
+                    <p>Nigerian Base Station Director</p>
                 </div>
                 <div class="team-member">
                     <img src="assets/teams/person-7.jpg" alt="Member 6">
@@ -223,14 +271,16 @@
                 </div>
             </div>
             <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-newsletter">
                 <h3>Newsletter</h3>
