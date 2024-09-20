@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 
 
 
 :root {
-    --primary-color: rgb(82, 43, 112);
+    --primary-color: #6850A8;
+    /*--primary-color: rgb(82, 43, 112);*/
+    --accent-color: #6850A8;
     --tertiary-color: #007bff;
     --secondary-color: #6c757d;
+    --surface1-color: #F1F2F6;
     --surface: #242824;
     --cold-surface: #5c539d;
     --font-family: Arial, sans-serif;
@@ -174,13 +180,13 @@ section {
     gap: 2rem;
     height: 85vh;
     margin: 0;
-    background-color: rgb(109, 4, 169);
+    background-color: var(--accent-color);
     /*background: 
         linear-gradient(135deg, rgba(109, 4, 169, 1), #d4d1d1);
     /* background: rgba(0, 204, 255, 0.6)
         conic-gradient(from 180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)), /* Gradient overlay */
        /* url('assets/background.jpg'); */ /*Background image */
-    background: url('assets/color-bg.png');
+    /*background: url('assets/color-bg.png');*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -260,6 +266,7 @@ section {
 .description {
     font-weight: 600;
     font-size: 18px;
+    color: rgba(104, 80, 168, 0.8);;
 }
 
 .heading {
@@ -348,6 +355,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 3em;
+    min-height: 100vh;
 }
 
 .features-container {
@@ -383,7 +391,7 @@ section {
 .feature-icon {
     font-size: 40px;
     margin-bottom: 15px;
-    color: rgba(63, 6, 97, 0.7);
+    color: var(--primary-color);
 }
 
 @media (max-width: 1080px) {
@@ -590,10 +598,13 @@ section {
 
 #team .description {
     color: #fafafa;
+    font-size: 1rem;
+    font-family: 'Lato';
 }
 
 #team .heading {
-    color: blueviolet;
+    color: var(--primary-color);
+    font-size: 32px;
 }
 
 .team {
@@ -642,7 +653,7 @@ section {
 .about {
     padding: 60px 0;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: var(--surface1-color);
 }
 
 .about-content {
@@ -666,13 +677,17 @@ section {
 .about-text h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--primary-color);
+}
+
+.about-text h3 {
+    color: var(--accent-color);
 }
 
 .about-text p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
-    color: #666;
+    color: rgba(104, 80, 168, 0.8);
 }
 /*
 .about-image {
@@ -697,6 +712,9 @@ section {
     src: url('assets/company.jpg'); /* Optional: Limit the image size 
 }
 */
+#contact{
+    font-family: 'Prompt';
+}
 
 .contact {
     padding: 60px 20px;
@@ -764,7 +782,7 @@ section {
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .form-group textarea {
@@ -777,7 +795,7 @@ button[type="submit"] {
     color: #ffffff;
     background-color: var(--primary-color);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
